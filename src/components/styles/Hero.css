@@ -1,0 +1,16 @@
+.download-resume-button {
+    background-color: #915EFF; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline from the link */
+    font-weight: bold; /* Bold font */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .download-resume-button:hover {
+    background-color: #7744ff; /* Darker shade when hovering */
+    transform: scale(1.05); /* Slightly increase size when hovering */
+  }
+  
