@@ -65,4 +65,16 @@
     /* Repeat the styles here if you're using Material-UI */
   }
   
-    
+  .profile-pic {
+    width: 30%; /* Half of the original width */
+    height: 30%; /* Half of the original height */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the area */
+    /* Add any additional styling such as border, box-shadow as needed */
+  }
+  .about-container {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: space-between; /* Space between text and image */
+  }
+  

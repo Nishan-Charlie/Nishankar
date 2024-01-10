@@ -8,6 +8,11 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import Button from '@material-ui/core/Button';
 import "./styles/about.css";
+import profilePic from '../assets/nishan.jpg'; // Adjust the path accordingly
+
+
+
+
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
@@ -15,6 +20,7 @@ const ServiceCard = ({ index, title, icon }) => (
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
+
       <div
         options={{
           max: 45,
@@ -58,7 +64,15 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
-
+    {/* Profile Picture */}
+    <motion.img 
+        src={profilePic} 
+        alt="Your Name" 
+        className="profile-pic" 
+        initial={{ opacity: 0, x: -100 }} 
+        animate={{ opacity: 1, x: 0 }} 
+        transition={{ duration: 1 }} 
+      />
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"

@@ -81,6 +81,7 @@ const Navbar = () => {
   ))}
 
   {/* Social icons with increased size */}
+  
   <li>
     <a href="https://www.linkedin.com/in/nishankar-sathiyamohan/" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faLinkedin} size="2x"/> {/* Increased size */}
@@ -90,7 +91,8 @@ const Navbar = () => {
     <a href="https://github.com/Nishan-Charlie/" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faGithub} size="2x"/> {/* Increased size */}
     </a>
-  </li>
+          </li>
+          
 </ul>
 
 
