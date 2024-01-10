@@ -89,7 +89,7 @@ const Education = () => {
         className="certificate-slide"
         variants={fadeIn('', '', 0.1, 1)}
       >
-        <img src={certificate.image} alt={certificate.title} className="certificate-image" />
+        <img src={require(certificate.image)} alt={certificate.title} className="certificate-image" />
       </motion.div>
     ))}
   </Slider>

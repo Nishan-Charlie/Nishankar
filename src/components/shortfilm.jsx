@@ -31,7 +31,7 @@ const ShortFilm = () => {
                     </p>
                 </motion.div>
             </div>
-                <video src="./src/assets/shortFilm.mp4" controls></video>
+                <video src={require("./src/assets/shortFilm.mp4")} controls></video>
       </>
     );
   };
