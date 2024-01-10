@@ -1,16 +1,45 @@
 .download-resume-button {
-    background-color: #915EFF; /* Button color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Removes underline from the link */
-    font-weight: bold; /* Bold font */
-    margin-top: 20px; /* Space above the button */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  /* Basic styling */
+  background-color: #915EFF; /* Change to your preferred color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer; /* Changes cursor to pointer */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  /* Hover effects */
+  &:hover {
+    background-color: #7744ff; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
   }
-  
-  .download-resume-button:hover {
-    background-color: #7744ff; /* Darker shade when hovering */
-    transform: scale(1.05); /* Slightly increase size when hovering */
+
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
   }
-  
+  animation: fadeIn 1s ease-out;
+}
+
+/* For Material-UI Button */
+.MuiButton-root.download-resume-button {
+  /* Repeat the styles here if you're using Material-UI */
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the video behind your content */
+}
+
+video {
+  width: 100%;
+  height: 80%;
+  object-fit: cover; /* To cover the entire container */
+}

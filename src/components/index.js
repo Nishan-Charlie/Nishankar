@@ -9,7 +9,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Education from './Education';
-
+import ShortFilm from './shortfilm';
 
 export {
   Hero,
@@ -25,5 +25,6 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Education
+  Education,
+  ShortFilm
 };

@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import Button from '@material-ui/core/Button';
+import "./styles/about.css";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
@@ -61,15 +63,37 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a passionate student who thrives on learning new technologies. My expertise falls into these categories:
+        <div>
+        I'm a passionate student and a Freelancer who thrives on learning new technologies.
+        
+        Check out my resume 👉 &nbsp; 	&nbsp;
+            <a href="src/assets/resume/Nishankar_CV_New.pdf" download="">
+          <Button
+              variant="contained"
+              color="primary"
+              component="a"
+              download
+              className="download-resume-button"
+              style={{ cursor: 'pointer' }} // Custom cursor on hover
+              >
+          My Resume
+              </Button>
+              </a>
+        </div>
+        <br></br>
+        
+        <h3 className={styles.sectionSubText}>
+          🎓My expertise falls into these categories🧑‍💻:
+          </h3>
       
 
 <ul style={{ listStyleType: 'none' }}>
   <li>
     <span
       style={{ cursor: 'pointer' }}
-      onClick={toggleWebDevelopment}
-      className={webDevelopmentVisible ? 'hover-style-active' : 'hover-style'}
+              onClick={toggleWebDevelopment}
+              
+              className={`${webDevelopmentVisible ? 'hover-style-active' : 'hover-style'} skill-category`}
     >
       {webDevelopmentVisible ? '[-] ' : '[+] '} Web Development🌐:
     </span>
@@ -90,9 +114,9 @@ const About = () => {
   </li>
   <li>
     <span
-      style={{ cursor: 'pointer' }}
-      onClick={toggleDataScience}
-      className={dataScienceVisible ? 'hover-style-active' : 'hover-style'}
+              style={{ cursor: 'pointer' }}
+              onClick={toggleDataScience}
+              className={`${ dataScienceVisible? 'hover-style-active': 'hover-style' } skill-category`}
     >
       {dataScienceVisible ? '[-] ' : '[+] '} Data Science🤖:
     </span>
@@ -111,7 +135,7 @@ const About = () => {
     <span
       style={{ cursor: 'pointer' }}
       onClick={toggleDataVisualization}
-      className={dataVisualizationVisible ? 'hover-style-active' : 'hover-style'}
+      className={`${dataVisualizationVisible ? 'hover-style-active' : 'hover-style'} skill-category`}
     >
       {dataVisualizationVisible ? '[-] ' : '[+] '} Data Visualization📊:
     </span>
@@ -128,7 +152,7 @@ const About = () => {
     <span
       style={{ cursor: 'pointer' }}
       onClick={toggleCloud}
-      className={cloudVisible ? 'hover-style-active' : 'hover-style'}
+      className={`${cloudVisible ? 'hover-style-active' : 'hover-style'} skill-category`}
     >
       {cloudVisible ? '[-] ' : '[+] '} Cloud☁️:
     </span>
@@ -151,7 +175,20 @@ const About = () => {
 
 
         <br></br>
-        I'm ready to leverage these skills to bring your ideas to life!
+        I'm ready to leverage these skills to bring your ideas to life❗
+        Check out my fiverr account 👉 &nbsp; 	&nbsp;
+            <a href="" >
+          <Button
+              variant="contained"
+              color='success'
+              component="a"
+              download
+              className="download-resume-button"
+              style={{ cursor: 'pointer' }} // Custom cursor on hover
+              >
+          Fiverr
+              </Button>
+              </a>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

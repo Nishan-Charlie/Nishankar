@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -69,7 +72,29 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
+  {/* Existing nav links */}
+  {navLinks.map((nav) => (
+    <li key={nav.id} className={`active === nav.id ? "text-white" : "text-secondary" hover:text-white text-[18px] font-medium cursor-pointer`}>
+      <a href={`#${nav.id}`}>{nav.title}</a>
+    </li>
+  ))}
+
+  {/* Social icons with increased size */}
+  <li>
+    <a href="https://www.linkedin.com/in/nishankar-sathiyamohan/" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faLinkedin} size="2x"/> {/* Increased size */}
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/Nishan-Charlie/" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faGithub} size="2x"/> {/* Increased size */}
+    </a>
+  </li>
+</ul>
+
+
+        {/* <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -80,7 +105,7 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img

@@ -1,0 +1,11 @@
+.short-film-text {
+    max-width: 3xl; /* Adjust based on your layout */
+    margin: auto;
+    margin-bottom: 20px; /* Space between text and video */
+  }
+  
+  .video-container {
+    max-width: 3xl; /* Match width with the text container */
+    margin: auto;
+  }
+  

@@ -16,13 +16,14 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
-  shopify,
+  peradeniya,
+  fiverr,
+  infinity,
   carrent,
   jobit,
   tripguide,
   threejs,
+
 } from "../assets";
 
 export const navLinks = [
@@ -46,7 +47,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Data Scientist",
     icon: mobile,
   },
   {
@@ -54,7 +55,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Free Lancer",
     icon: creator,
   },
 ];
@@ -116,37 +117,25 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Course Instructor",
+    company_name: "University Of Peradeniya",
+    icon: peradeniya,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Jan 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "In this role, I have been responsible for delivering high-quality education and mentoring aspiring computer engineers in various critical subjects, including:",
+      "Data Structures and Algorithms: I design and deliver engaging lectures, tutorials, and practical sessions to help students master fundamental data structures and algorithms crucial for efficient software development.",
+      "Computer Networks: I impart knowledge on network architecture, protocols, and technologies, enabling students to understand and design robust computer networks.",
+      "Network and Cybersecurity: I educate students on network security principles, ethical hacking, and cybersecurity practices to prepare them for the challenges of securing modern computer systems.",
+      "Software Engineering: I also teach Software Engineering, covering the entire software development lifecycle, software design patterns, and best practices in software development."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Free Lancer",
+    company_name: "Fiverr",
+    icon: fiverr,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Nov 2022 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -156,15 +145,17 @@ const experiences = [
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    company_name: "Infinity Innovators",
+    icon: infinity,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Dec 2022 - Apr 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Frontend development using React.js",
+ "Backend development with Node.js",
+ "Utilizing serverless architecture with the Serverless Framework",
+ "Working with various AWS services",
+"Managing projects with Jira boards",
+ "Version control using Git and GitHub"
     ],
   },
 ];

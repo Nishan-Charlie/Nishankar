@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import React, { useState, useEffect } from 'react';
 import "./styles/Hero.css";
+import Button from '@material-ui/core/Button';
 
 const Hero = () => {
 
@@ -21,7 +22,7 @@ const Hero = () => {
         setIsDeleting(false);
       }
       setIndex(isDeleting ? index - 1 : index + 1);
-    }, 300); // Adjust speed here
+    }, 500); // Adjust speed here
 
     return () => clearTimeout(timeout);
   }, [displayedText, index, isDeleting]);
@@ -57,20 +58,12 @@ const Hero = () => {
             I'm a passionate Computer Engineering student 💻 <br className="sm:block hidden" />
             skilled in Data Science🧑‍🔬, Web Development🌐, and Cloud Computing☁️.
           </p>
-          <div>
-          <a 
-            href="src\assets\resume\Nishankar_CV_New.pdf" // Update the path to your resume file
-            download
-            className="download-resume-button" // Add your button styles
-          >
-            My Resume
-            </a>
-            </div>
+          
         </div>
       </div>
       
       <ComputersCanvas />
-
+        
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
@@ -88,6 +81,9 @@ const Hero = () => {
           </div>
         </a>
       </div>
+
+
+      
     </section>
   );
 };

@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import Slider from 'react-slick';
+import Button from '@material-ui/core/Button';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./styles/Education.css"
@@ -23,7 +24,7 @@ const certificates = [
 const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -46,6 +47,21 @@ const Education = () => {
           <h2 className={`${styles.heading3}`}>University of Peradeniya</h2>
           <p className={`${styles.paragraph}`}>B.Sc (Hons) Computer Engineering (2019 - Present)</p>
           <p>CGPA: 3.50/4.00</p>
+          <div> 
+        My Transcript 👉 &nbsp; 	&nbsp;
+            <a href="src/assets/resume/Nishankar_unofficial_interim_transcript.pdf" download="">
+          <Button
+              variant="contained"
+              color="primary"
+              component="a"
+              download
+              className="download-resume-button"
+              style={{ cursor: 'pointer' }} // Custom cursor on hover
+              >
+          Download
+              </Button>
+              </a>
+        </div>
         </div>
       </motion.p>
 
@@ -63,7 +79,8 @@ const Education = () => {
       <motion.div 
   variants={textVariant()}
   className="slider-container"
->
+      >
+        
   <h2 className={styles.sectionHeadText}>Certificates</h2>
   <Slider {...settings}>
     {certificates.map((certificate) => (

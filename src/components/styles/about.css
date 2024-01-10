@@ -28,4 +28,41 @@
     gap: 10px;
     margin-left: 20px;
   }
+
+  .download-resume-button {
+    /* Basic styling */
+    background-color: #915EFF; /* Change to your preferred color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer; /* Changes cursor to pointer */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  
+    /* Hover effects */
+    &:hover {
+      background-color: #7744ff; /* Darker shade on hover */
+      transform: scale(1.1); /* Slightly increase size on hover */
+    }
+
+    .skill-category {
+      padding: 50px 0; /* Adjust the values as needed */
+    }
+    
+  
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* For Material-UI Button */
+  .MuiButton-root.download-resume-button {
+    /* Repeat the styles here if you're using Material-UI */
+  }
+  
     
