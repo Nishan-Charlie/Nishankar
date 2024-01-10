@@ -9,14 +9,21 @@ import Button from '@material-ui/core/Button';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./styles/Education.css"
+import AIforEveryone from '../Certificates/AIFor everyone-1.png'
+import Algorithm from '../Certificates/Algorithm-1.png'
+import DEZY5URZ3VP7 from '../Certificates/Coursera DEZY5URZ3VP7-1.png'
+import ImageProcessing from '../Certificates/ImageProcessing Project-1.png'
+import neuralNetwork from '../Certificates/neuralNetwork-1.png'
+import Pythonbeginer from '../Certificates/Pythonbeginer-1.png'
+
 
 const certificates = [
-  { id: 1, image: 'src/Certificates/AIFor everyone-1.png', title: 'Certificate Title 1' },
-  { id: 2, image: 'src/Certificates/Algorithm-1.png', title: 'Certificate Title 1' },
-  { id: 3, image: 'src/Certificates/Coursera DEZY5URZ3VP7-1.png', title: 'Certificate Title 1' },
-  { id: 4, image: 'src/Certificates/ImageProcessing Project-1.png', title: 'Certificate Title 1' },
-  { id: 5, image: 'src/Certificates/neuralNetwork-1.png', title: 'Certificate Title 1' },
-  { id: 6, image: 'src/Certificates/Pythonbeginer-1.png', title: 'Certificate Title 1' },
+  { id: 1, image: AIforEveryone, title: 'Certificate Title 1' },
+  { id: 2, image: Algorithm, title: 'Certificate Title 1' },
+  { id: 3, image: DEZY5URZ3VP7, title: 'Certificate Title 1' },
+  { id: 4, image: ImageProcessing, title: 'Certificate Title 1' },
+  { id: 5, image: neuralNetwork, title: 'Certificate Title 1' },
+  { id: 6, image: Pythonbeginer, title: 'Certificate Title 1' },
   // ... more certificate objects with the path to their images
 ];
 
@@ -89,7 +96,7 @@ const Education = () => {
         className="certificate-slide"
         variants={fadeIn('', '', 0.1, 1)}
       >
-        <img src={require(certificate.image)} alt={certificate.title} className="certificate-image" />
+        <img src={certificate.image} alt={certificate.title} className="certificate-image" />
       </motion.div>
     ))}
   </Slider>

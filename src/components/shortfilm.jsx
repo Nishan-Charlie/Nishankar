@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-
+import shortfilm from "../assets/shortFilm.mp4"
 
 const ShortFilm = () => {
     const [readMore, setReadMore] = useState(false);
@@ -31,7 +31,7 @@ const ShortFilm = () => {
                     </p>
                 </motion.div>
             </div>
-                <video src={require("./src/assets/shortFilm.mp4")} controls></video>
+                <video src={shortfilm} controls></video>
       </>
     );
   };
